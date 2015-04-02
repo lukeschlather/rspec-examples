@@ -1,4 +1,4 @@
-require 'contrived_example'
+require 'let_vs_constant'
 
 
 describe 'with let' do
