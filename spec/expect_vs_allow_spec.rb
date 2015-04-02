@@ -18,4 +18,10 @@ describe 'call_service' do
     expect(service).to receive(:make_request).once
     MockThatThing.service_call(service)
   end
+
+  it 'this test fails because the mock is late' do
+    service = double()
+    MockThatThing.service_call(service)
+    expect(service).to receive(:make_request).once
+  end
 end
